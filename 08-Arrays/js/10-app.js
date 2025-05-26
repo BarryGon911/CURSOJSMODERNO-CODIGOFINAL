@@ -7,9 +7,7 @@ const carrito = [
     { nombre: 'Celular', precio: 500},
 ]
 
-// Muy similar al forEach existe un array metod llamado map, la diferencia es que map te crea un array nuevo...
-
-
+// Muy similar al forEach existe un array metod llamado map, la diferencia es que map te crea un array nuevo... y forEach no lo hace.
 const nuevoArray = carrito.map( function(producto) {
    return  `Articulo: ${ producto.nombre } Precio: $ producto.precio} `;
 })
