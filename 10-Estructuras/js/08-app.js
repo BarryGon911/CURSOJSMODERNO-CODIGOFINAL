@@ -1,7 +1,8 @@
+// Sección 10 - Clase 78: Estructuras de Control
+// Detener la ejecución de un if con una función
+
 // Buenas practicas con ifs...
-
 // Veamos algunas buenas practicas, sencillas para escribirs ifs
-
 // una muy común es que muchas personas hacen lo siguiente...
 
 const autenticado = true;
@@ -10,9 +11,7 @@ if(autenticado === true) {
     console.log('El Usuario esta autenticado')
 }
 
-
 // Debido a que el IF ya retorna true, puedes eliminarlo y tu código será mejor..
-
 // También muchas personas escriben ifs pensando que se podrán ejecutar 2 condiciones al mismo tiempo, el if solo va aejecutar la primera que se cumpla...
 
 const puntaje = 500;
