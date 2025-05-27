@@ -1,24 +1,30 @@
-// Arrow functions en métodos de propiedad
+// Volover a hacer el archivo 13.js porque lo borré sin querer
 
+// Sección 9 - Clase 70: Añadir Funciones en un Objeto
+
+/*
+En este video veremos lo que son los métodos de propiedad, es decir son funciones con una sintaxis similar a las de un método..
+también llegan a ser muy comunes sobretodo porque es un objeto grande con todas las funciones...
+*/
 
 const reproductor = {
-    cancion: '',
-    reproducir: id => console.log(`Reproduciendo canción id ${id}`),
-    pausar: () => console.log('pausando...'),
-    borrar: id => console.log(`Borrando canción con id: ${id}`),
-    crearPlaylist: nombre =>  console.log(`Creando la Playlist ${nombre}`),
-    reproducirPlaylist: nombre =>  console.log(`Reproduciendo la Playlist ${nombre}`),
-
-    // También existen los Set y Get si tienes experiencia con esos términos, y si no, set es para añadir un valor, get es para obtenerlo...
-
-    set nuevaCancion(cancion) {
-        this.cancion = cancion;
-        console.log(`Añadiendo ${cancion}`)
+    reproducir: function(id) {
+        console.log(`Reproduciendo canción con el id: ${id}`);
     },
-    get obtenerCancion() {
-        console.log(`${this.cancion}`)
+    pausar: function() {
+        console.log('pausando...');
+    },
+    borrar: function(id) {
+        console.log(`Borrando canción: ${id}`)
+    },
+    crearPlaylist: function(nombre) {
+        console.log(`Creando la Playlist de: ${nombre}`);
+    },
+    reproducirPlaylist: function(nombre) {
+        console.log(`Reproduciendo la Playlist de: ${nombre}`)
     }
 }
+
 reproductor.reproducir(30);
 reproductor.pausar();
 
@@ -26,11 +32,7 @@ reproductor.pausar();
 // reproductor.borrar = function(id) {
     
 // }
+
 reproductor.borrar(20);
 reproductor.crearPlaylist('Heavy Metal');
 reproductor.reproducirPlaylist('Heavy Metal');
-
-
-// Probando set y get se utilizando de la siguiente forma
-reproductor.nuevaCancion = 'Enter Sandman';
-reproductor.obtenerCancion;
