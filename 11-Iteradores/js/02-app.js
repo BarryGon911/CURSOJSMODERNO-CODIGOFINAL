@@ -19,7 +19,7 @@ for(let i = 0; i <= 10; i++) {
     console.log(`Numero:  ${i} `);
 }
 
-//  Y en que casos puedes utilizar el continue??
+//  ¿Y en qué casos puedes utilizar el continue?
 const carrito = [
     { nombre: 'Monitor 20 Pulgadas', precio: 500},
     { nombre: 'Televisión 50 Pulgadas', precio: 100},
